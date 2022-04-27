@@ -31,7 +31,7 @@ docker run -it \
 ### As a Node project
 
 ```bash
-git clone https://github.com/bakoushin/poh-validator-hcaptcha.git
+git clone https://github.com/bakoushin/poh-validator-hcaptcha-api.git
 cd poh-validator-hcaptcha
 npm install
 npm start

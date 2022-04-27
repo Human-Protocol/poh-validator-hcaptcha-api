@@ -1,5 +1,5 @@
 {
-  "name": "poh-validator-hcaptcha",
+  "name": "poh-validator-hcaptcha-api",
   "version": "0.0.1",
   "description": "Proof-of-Humanity hCaptcha Validator API",
   "main": "index.js",

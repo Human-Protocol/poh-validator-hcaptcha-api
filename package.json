@@ -1,0 +1,44 @@
+{
+  "name": "poh-validator-hcaptcha",
+  "version": "0.0.1",
+  "description": "Proof-of-Humanity hCaptcha Validator API",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "cross-env NODE_ENV=production node -r dotenv/config index.js",
+    "docker": "NODE_ENV=production node index.js",
+    "dev": "nodemon -r dotenv/config --inspect index.js",
+    "docker-build": "docker build -t bakoushin/poh-validator-hcaptcha .",
+    "docker-publish": "docker push bakoushin/poh-validator-hcaptcha",
+    "test": "env-cmd -f ./.env.test mocha --exit test/**/*.js"
+  },
+  "keywords": [
+    "PoH",
+    "humanity",
+    "proof",
+    "api",
+    "sever",
+    "hCaptcha"
+  ],
+  "author": "Alex Bakoushin <alex@bakoush.in>",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "2.8.5",
+    "cross-env": "7.0.3",
+    "dotenv": "16.0.0",
+    "ethers": "5.6.4",
+    "express": "4.17.3",
+    "hcaptcha": "0.1.1",
+    "morgan": "1.10.0"
+  },
+  "devDependencies": {
+    "chai": "4.3.6",
+    "chai-http": "4.3.0",
+    "env-cmd": "10.1.0",
+    "mocha": "9.2.2",
+    "nodemon": "2.0.15"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}

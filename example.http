@@ -1,0 +1,7 @@
+POST http://localhost:3000/api/v1/proof
+Content-Type: application/json
+
+{
+  "data": "0xef9990adc264ccc6e55bd0cfbf8dbef5177760273ee5aa3f65aae4bbb014750f",
+  "token": "10000000-aaaa-bbbb-cccc-000000000001"
+}

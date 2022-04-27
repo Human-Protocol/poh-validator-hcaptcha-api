@@ -8,7 +8,7 @@ The endpoint takes a hex-string `data` to be signed, and an [hCaptcha](https://w
 
 Once hCaptcha token validity is verified, `data` is included in a signed Proof-of-Humanity, which is returned along with a `timestamp`.
 
-See details and example: [OpenAPI interface](hhttps://app.swaggerhub.com/apis-docs/bakoushin/poh-validator-hcaptcha/0.0.1)
+See details and example: [OpenAPI interface](https://app.swaggerhub.com/apis-docs/bakoushin/poh-validator-hcaptcha/0.0.1)
 
 Generated Proof-of-Humanity could be further verified on-chain in a smart contract.
 

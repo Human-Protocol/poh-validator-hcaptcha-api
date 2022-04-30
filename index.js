@@ -8,6 +8,8 @@ const app = express();
 app.use(express.json());
 app.use(morgan('dev'));
 
+app.use(express.static('public'));
+
 app.use('/api/v1', cors(), api);
 
 app.use((req, res) => {

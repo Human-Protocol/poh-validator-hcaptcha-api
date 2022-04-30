@@ -20,10 +20,10 @@ This API can be used as an example for other PoH validator APIs.
 
 ```bash
 docker run -it \
-  -p 3000:3000 \
-  --env PORT=3000 \
+  -p 8080:8080 \
+  --env PORT=8080 \
   --env VALIDATOR_KEY=0x89c821ae8f9abcd0737f910e3de1904699df9e390a9f184f01f941e20dac8a52 \
-  --env HCAPTCHA_TOKEN=10000000-ffff-ffff-ffff-000000000001 \
+  --env HCAPTCHA_SITEKEY=10000000-ffff-ffff-ffff-000000000001 \
   --env HCAPTCHA_SECRET=0x0000000000000000000000000000000000000000 \
   bakoushin/poh-validator-hcaptcha
 ```
@@ -40,7 +40,7 @@ npm start
 ### Example query
 
 ```bash
-curl -X POST http://localhost:3000/api/v1/proof \
+curl -X POST http://localhost:8080/api/v1/proof \
    -H 'Content-Type: application/json' \
    -d '{ "data": "0xef9990adc264ccc6e55bd0cfbf8dbef5177760273ee5aa3f65aae4bbb014750f", "token": "10000000-aaaa-bbbb-cccc-000000000001" }'
 ```
@@ -49,12 +49,12 @@ curl -X POST http://localhost:3000/api/v1/proof \
 
 ### Environment variables
 
-| Env. variable   | Description                 | Example                                                            |
-| --------------- | --------------------------- | ------------------------------------------------------------------ |
-| PORT            | Port to run on              | 3000                                                               |
-| VALIDATOR_KEY   | Private key to sign proofs  | 0x89c821ae8f9abcd0737f910e3de1904699df9e390a9f184f01f941e20dac8a52 |
-| HCAPTCHA_TOKEN  | hCaptcha site key           | 10000000-ffff-ffff-ffff-000000000001                               |
-| HCAPTCHA_SECRET | hCaptcha account secret key | 0x0000000000000000000000000000000000000000                         |
+| Env. variable    | Description                 | Example                                                            |
+| ---------------- | --------------------------- | ------------------------------------------------------------------ |
+| PORT             | Port to run on              | 8080                                                               |
+| VALIDATOR_KEY    | Private key to sign proofs  | 0x89c821ae8f9abcd0737f910e3de1904699df9e390a9f184f01f941e20dac8a52 |
+| HCAPTCHA_SITEKEY | hCaptcha site key           | 10000000-ffff-ffff-ffff-000000000001                               |
+| HCAPTCHA_SECRET  | hCaptcha account secret key | 0x0000000000000000000000000000000000000000                         |
 
 ## Author
 

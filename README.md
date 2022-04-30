@@ -23,7 +23,6 @@ docker run -it \
   -p 8080:8080 \
   --env PORT=8080 \
   --env VALIDATOR_KEY=0x89c821ae8f9abcd0737f910e3de1904699df9e390a9f184f01f941e20dac8a52 \
-  --env HCAPTCHA_SITEKEY=10000000-ffff-ffff-ffff-000000000001 \
   --env HCAPTCHA_SECRET=0x0000000000000000000000000000000000000000 \
   bakoushin/poh-validator-hcaptcha
 ```
@@ -49,12 +48,11 @@ curl -X POST http://localhost:8080/api/v1/proof \
 
 ### Environment variables
 
-| Env. variable    | Description                 | Example                                                            |
-| ---------------- | --------------------------- | ------------------------------------------------------------------ |
-| PORT             | Port to run on              | 8080                                                               |
-| VALIDATOR_KEY    | Private key to sign proofs  | 0x89c821ae8f9abcd0737f910e3de1904699df9e390a9f184f01f941e20dac8a52 |
-| HCAPTCHA_SITEKEY | hCaptcha site key           | 10000000-ffff-ffff-ffff-000000000001                               |
-| HCAPTCHA_SECRET  | hCaptcha account secret key | 0x0000000000000000000000000000000000000000                         |
+| Env. variable   | Description                 | Example                                                            |
+| --------------- | --------------------------- | ------------------------------------------------------------------ |
+| PORT            | Port to run on              | 8080                                                               |
+| VALIDATOR_KEY   | Private key to sign proofs  | 0x89c821ae8f9abcd0737f910e3de1904699df9e390a9f184f01f941e20dac8a52 |
+| HCAPTCHA_SECRET | hCaptcha account secret key | 0x0000000000000000000000000000000000000000                         |
 
 ## Author
 

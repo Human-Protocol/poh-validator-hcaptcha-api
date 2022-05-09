@@ -54,6 +54,14 @@ curl -X POST http://localhost:8080/api/v1/proof \
 | VALIDATOR_KEY   | Private key to sign proofs  | 0x89c821ae8f9abcd0737f910e3de1904699df9e390a9f184f01f941e20dac8a52 |
 | HCAPTCHA_SECRET | hCaptcha account secret key | 0x0000000000000000000000000000000000000000                         |
 
+## See also
+
+- [Proof-of-Humanity-React](https://npmjs.com/packages/poh-react)
+- [Proof-of-Humanity hCaptcha Validator React](https://npmjs.com/package/poh-validator-hcaptcha-react)
+- [Proof-of-Humanity hCaptcha Validator API](https://hub.docker.com/r/bakoushin/poh-validator-hcaptcha)
+- [Proof-of-Humanity Solidity Contracts](https://npmjs.com/package/poh-contracts)
+- [Counter dApp Example](https://github.com/bakoushin/poh-counter-example)
+
 ## Author
 
 Alex Bakoushin

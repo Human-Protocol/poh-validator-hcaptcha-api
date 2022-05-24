@@ -56,6 +56,7 @@ curl -X POST http://localhost:8080/api/v1/proof \
 
 ## See also
 
+- [Proof-of-HUMANity on-chain: protect your smart contracts from bots](https://www.humanprotocol.org/blog/proof-of-humanity-on-chain-protect-your-smart-contracts-from-bots)
 - [Proof-of-Humanity-React](https://npmjs.com/packages/poh-react)
 - [Proof-of-Humanity hCaptcha Validator React](https://npmjs.com/package/poh-validator-hcaptcha-react)
 - [Proof-of-Humanity hCaptcha Validator API](https://hub.docker.com/r/bakoushin/poh-validator-hcaptcha)
